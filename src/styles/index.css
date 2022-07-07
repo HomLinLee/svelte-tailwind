@@ -1,0 +1,17 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+@layer utilities {
+    .hauto {
+        height: auto;
+        overflow: hidden;
+    }
+    .img100 {
+        width: 100%;
+        display: block;
+    }
+}

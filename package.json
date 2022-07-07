@@ -1,0 +1,50 @@
+{
+	"name": "my-svelte-app",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "pnpm run lint:fix && vite",
+		"build": "vite build",
+		"build:dev": "npm run lint:fix && cross-env BUILD_ENV='DEV' vite build --mode dev",
+		"build:master": "npm run lint:fix && vite build",
+		"lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
+		"format": "npx prettier --write \"{,!(node_modules|public)/**/}*.{js,ts,json,css,svelte}\"",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+		"@tsconfig/svelte": "^2.0.1",
+		"@typescript-eslint/eslint-plugin": "^5.29.0",
+		"@typescript-eslint/parser": "^5.29.0",
+		"@vitejs/plugin-legacy": "^1.8.2",
+		"autoprefixer": "^10.4.7",
+		"babel-plugin-transform-remove-console": "^6.9.4",
+		"cross-env": "^7.0.3",
+		"cssnano": "^5.1.12",
+		"eslint": "^8.18.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"postcss-pxtorem": "^6.0.0",
+		"prettier": "^2.7.1",
+		"prettier-plugin-svelte": "^2.7.0",
+		"rollup-plugin-visualizer": "^5.6.0",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.2.7",
+		"svelte-preprocess": "^4.9.8",
+		"svelte-spa-router": "^3.2.0",
+		"tailwindcss": "^3.1.4",
+		"tslib": "^2.3.1",
+		"typescript": "^4.5.4",
+		"vite": "^2.9.9",
+		"vite-plugin-compression": "^0.5.1",
+		"vite-plugin-style-import": "^2.0.0"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"> 1%",
+		"iOS 7",
+		"last 3 iOS versions"
+	]
+}

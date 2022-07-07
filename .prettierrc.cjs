@@ -1,0 +1,22 @@
+module.exports = {
+  arrowParens: 'avoid',
+  singleQuote: true,
+  printWidth: 90,
+  plugins: ['prettier-plugin-svelte'],
+  semi: false,
+  // svelteSortOrder: 'options-styles-scripts-markup',
+  svelteStrictMode: false,
+  svelteBracketNewLine: true,
+  svelteIndentScriptAndStyle: true,
+  trailingComma: 'none',
+  bracketSameLine: false,
+  // auto: 'auto',
+  singleAttributePerLine: true,
+  svelteSortOrder: "options-scripts-markup-styles",
+  bracketSpacing: true,
+  embeddedLanguageFormatting: 'off',
+  endOfLine: 'auto',
+  tabWidth: 4,
+  useTabs: true,
+  // overrides: [{ 'files': ['*.test.js', '*.spec.js'], 'options': { 'semi': true } }]
+}
